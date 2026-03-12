@@ -41,8 +41,23 @@ When using an ESP32, it is recommended to use **UART2** to keep the primary USB-
 The library is configured to handle the MNL80A startup sequence in the background, ensuring notifications are active without manual user input.
 
 ---
+Operating Mode Description
+The PLC-IoT module firmware provides two working modes, including: AT mode and
+transparent transmission mode.
+ AAT Command Mode: In this mode, users can control or configure the module through AT
+commands. For example, you can obtain the PLC network topology, set the CCO whitelist, set
+the GPIO working mode, etc.
+ Transparent Transmission Mode: In this mode, users can automatically send serial data
+through the CCO via the PLC network to the STA and transparently transmit it to the STA
+serial port. Similarly, serial data can be sent through the STA via the PLC network to the CCO
+and transparently transmitted to the CCO serial port, achieving data transparent transmission
+between the CCO and the STA.
 
 ### Technical Specifications
+After the PLC-IoT module is powered on, it defaults to working in AT command mode.
+Users can connect to the UART0 serial port of the module and switch to other working modes
+through serial commands. The default UART parameter configuration of the PLC-IoT module is
+as follows:
 
 * **Default Baud Rate:** 115200 bps
 * **Communication Protocol:** AT Command Set
