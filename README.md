@@ -1,3 +1,7 @@
+Demo Video : https://youtube.com/shorts/mq8GhsHjBIU?feature=share
+Buy Link : https://www.alibaba.com/product-detail/PLC-Module-2KM-Signal-Reach-Power_1601511420527.html?spm=a2700.galleryofferlist.wending_top.i0.2f7b13a0cGKjlB
+Mqtt Broker : https://www.hivemq.com/agent/
+
 ## MNL80A PLC Library for ESP32
 
 A lightweight C++ library for interfacing the **MNL80A Power Line Communication (PLC)** module with the **ESP32** using Hardware Serial. 
